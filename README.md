@@ -14,4 +14,5 @@ Implemented Machine Learning algorithms from scratch using python libraries like
 - [Logistic regression](https://github.com/Hyouteki/ML-algos/blob/main/logistic_regression.py)
 - [Mahalanobis](https://github.com/Hyouteki/ML-algos/blob/main/mahalanobis.py)
 - [Mean shift](https://github.com/Hyouteki/ML-algos/blob/main/mean_shift.py)
+- [Mean shift repo contd](https://github.com/Hyouteki/MemeShift)
 - [Priciple component analysis](https://github.com/Hyouteki/ML-algos/blob/main/pca.py)
