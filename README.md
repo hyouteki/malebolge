@@ -1,5 +1,5 @@
 # ML-algos
-Implemented Machine Learning algorithms from scratch using python libraries like numpy and pandas in object oriented pattern that is easy to understand and modify further.
+Implementation of **Machine Learning** algorithms from **scratch** using python libraries like numpy and pandas in object oriented pattern that is easy to understand and easy to modify further.
 
 ## Contents
 - [Fisher discriminant analysis](https://github.com/Hyouteki/ML-algos/blob/main/fda.py)
