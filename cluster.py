@@ -1,20 +1,37 @@
+import random
 import numpy as np
 from point import Point
 
 class Cluster:
-    def __init__(self, id=None, members=[]):
-        if id == None and len(members) > 0:
-            self.id = members[0].label
+    def __init__(self, id=None, members=[], dim=None):
         self.members = members
+        self.dim = dim
+        self.id = id
+        if len(members) > 0:
+            if id == None:
+                self.id = members[0].label
+            self.dim = members[0].dim
+        self.centroid = Point(dim=self.dim) if self.dim != None else []
+
+    def randomizeCentroid(self):
+        assert self.dim != None
+        self.centroid.features = [random.randint(0, 1) for i in range(self.dim)]
 
     def calculateCentroid(self):
-        trash = np.array([float(0) for _ in range(len(self.members[0].features))])
+        assert self.dim != None
+        if len(self.members) == 0:
+            return None
+        trash = np.array([float(0) for _ in range(self.dim)])
         for member in self.members:
             trash += np.array(member.features)
         trash = trash/len(self.members)
-        return Point(features=trash.tolist(), label=self.id)
+        self.centroid = Point(features=trash.tolist(), label=self.id)
+        return self.centroid
 
-    def addMember(self, point) -> bool:
+    def clearMembers(self):
+        self.members = []
+
+    def addMember(self, point):
         if point.label == self.id:
             self.members.append(point)
         return point.label == self.id

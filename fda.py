@@ -1,5 +1,6 @@
 import numpy as np
 from point import Point
+from cluster import Cluster
 
 class FDA:
     def __init__(self, data=[], debug: bool = False):
