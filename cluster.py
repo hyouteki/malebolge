@@ -47,6 +47,17 @@ class Cluster:
         sj = sj/(len(self.members)-1)
         return sj
 
+    def calculateSj(self):
+        centroid = self.calculateCentroid()
+        assert len(self.members) > 0
+        sj = np.matrix([[float(0) for _ in range(self.members[0].dim)]
+                        for _ in range(self.members[0].dim)])
+        for member in self.members:
+            sub = np.matrix(Point.subtractPointToNumpyArray(member, centroid))
+            trans = sub.T
+            sj += np.dot(trans, sub)
+        return sj
+
     def __str__(self):
         return f"[id: {self.id}, len(members): {len(self.members)}]"
 

@@ -6,12 +6,12 @@ class Silhouette:
     def __init__(self, debug=False):
         self.debug = debug
         self.INT_MAX = float("inf")
-        self.__points: list[Point] = []
-        self.__clusters: list[Cluster] = []
-        self.__aScore: list[float] = []
-        self.__bScore: list[float] = []
-        self.__sScore: list[float] = []
-        self.__distances: list[list[float]] = []
+        self.__points = []
+        self.__clusters = []
+        self.__aScore = []
+        self.__bScore = []
+        self.__sScore = []
+        self.__distances = []
 
     def __sameCluster(self, i, j):
         point1 = self.__points[i]

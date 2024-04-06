@@ -1,18 +1,26 @@
-# ML-algos
-Implementation of **Machine Learning** algorithms from **scratch** using python libraries like numpy and pandas in object oriented pattern that is easy to understand and easy to modify further.
+## Malebolge
+Machine Learning algorithms implementation from scratch in python using just numpy.
 
-## Contents
-- [Fisher discriminant analysis](https://github.com/Hyouteki/ML-algos/blob/main/fda.py)
-- [Fuzzy c means](https://github.com/Hyouteki/ML-algos/blob/main/fuzzy_c_means.py)
-- [Independent component analysis](https://github.com/Hyouteki/ML-algos/blob/main/ica.py)
-- [Image actor](https://github.com/Hyouteki/ML-algos/blob/main/image_actor.py)
-- [K means](https://github.com/Hyouteki/ML-algos/blob/main/k_means.py)
-- [K nearest neighbours](https://github.com/Hyouteki/ML-algos/blob/main/knn.py)
-- [Linear discrimiant analysis](https://github.com/Hyouteki/ML-algos/blob/main/lda.py)
-- [Linear regression](https://github.com/Hyouteki/ML-algos/blob/main/linear_regression.py)
-- [Local outlier factor](https://github.com/Hyouteki/ML-algos/blob/main/lof.py)
-- [Logistic regression](https://github.com/Hyouteki/ML-algos/blob/main/logistic_regression.py)
-- [Mahalanobis](https://github.com/Hyouteki/ML-algos/blob/main/mahalanobis.py)
-- [Mean shift](https://github.com/Hyouteki/ML-algos/blob/main/mean_shift.py)
-- [Mean shift repo contd](https://github.com/Hyouteki/MemeShift)
-- [Priciple component analysis](https://github.com/Hyouteki/ML-algos/blob/main/pca.py)
+### Unsupervised
+- [Fuzzy c means](./fuzzy_cmeans.py)
+- [K means](./kmeans.py)
+- [Local Outlier Factor](./lof.py)
+- [Mahalanobis](./mahalanobis.py)
+- [Mean shift](./meanshift.py)
+
+### Supervised
+- [K Nearest Neighbours](./knn.py)
+- [Logistic Regression](./log_reg.py)
+- [Linear Regression](./lin_reg.py)
+
+### Analysis
+- [Fisher Discriminant Analysis](./fda.py)
+- [Independent Component Analysis](./ica.py)
+- [Linear Discrimiant Analysis](./lda.py)
+- [Principle Component Analysis](./pca.py)
+- [Silhouette Analysis](./silhouette.py)
+
+### Helper classes
+- [Cluster](./cluster.py)
+- [Image Actor](./image_actor.py)
+- [Point](./point.py)
